@@ -4,15 +4,22 @@ const router = Router();
 
 // Products routes starts here
 
-router.get("/products", () => {});
+router.get("/products", (req: any,res) => {
+    res.json({
+        "Message": req.shhhh_secret
+    })
+});
 router.get("/products/:id", () => {});
 router.put("/products/:id", () => {});
-router.delete("/products", () => {});
+router.post("/products", () => {});
+router.put("/products/:id", () => {});
+router.delete("/products/:id", () => {});
 
 // Updates routes are heree
 
 router.get("/update", () => {});
 router.get("/update/:id", () => {});
+router.post("/update", () => {});
 router.put("/update/:id", () => {});
 router.delete("/update", () => {});
 
@@ -20,5 +27,9 @@ router.delete("/update", () => {});
 
 router.get("/updatepoint", () => {});
 router.get("/updatepoint/:id", () => {});
+router.post("/updatepoint", () => {});
 router.put("/updatepoint/:id", () => {});
 router.delete("/updatepoint", () => {});
+
+
+export default router;

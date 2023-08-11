@@ -15,7 +15,7 @@ router.post("/products", () => {});
 router.put("/products/:id", () => {});
 router.delete("/products/:id", () => {});
 
-// Updates routes are heree
+// Updates routes are here
 
 router.get("/update", () => {});
 router.get("/update/:id", () => {});

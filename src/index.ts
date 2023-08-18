@@ -1,9 +1,6 @@
-import app from "./server"
-import * as dotenv from "dotenv"
+import { app } from "./app";
+import * as dotenv from "dotenv";
 
-dotenv.config();
-
-app.listen(3001, () => {
-    console.log("Server is create and is running on port http://localhost:3001")
-})
- 
+app.listen(4200, () => {
+  console.log(`My server is running on port http://localhost:4200`);
+});

@@ -1,6 +1,6 @@
 import express from "express";
 import router from "./routers";
-import { createNewUser } from "./handlers/user";
+import { createNewUser, signInUser } from "./handlers/user";
 import { protect } from "./modules/auth";
 
 export const app = express();
@@ -18,4 +18,6 @@ app.get("/", (req: any, res: any) => {
 });
 
 app.use("/api", protect, router);
+
 app.post("/signup", createNewUser);
+app.post("/signin", signInUser);
